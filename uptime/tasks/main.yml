@@ -1,0 +1,17 @@
+####################
+
+- name    : get
+
+  command : '{{ uptime_command }}'
+
+  changed_when: false
+
+  register: uptime
+
+####################
+
+- name : display
+
+  debug: var=uptime.stdout
+
+####################

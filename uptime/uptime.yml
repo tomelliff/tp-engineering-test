@@ -1,0 +1,11 @@
+####################
+
+- name: uptime
+
+  hosts: all
+
+  roles:
+
+    - role: uptime
+
+####################
