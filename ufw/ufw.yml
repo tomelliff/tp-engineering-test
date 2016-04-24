@@ -1,12 +1,12 @@
 ####################
 
-- name: ufw
+- name  : ufw
 
   become: true
 
-  hosts: all
+  hosts : all
 
-  roles:
+  roles :
 
     - role: ufw
 

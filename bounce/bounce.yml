@@ -1,12 +1,12 @@
 ####################
 
-- name: bounce
+- name  : bounce
 
   become: true
 
-  hosts: all
+  hosts : all
 
-  roles:
+  roles :
 
     - role: bounce
 

@@ -1,6 +1,6 @@
 ####################
 
-- name: uptime
+- name : uptime
 
   hosts: all
 

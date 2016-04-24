@@ -2,7 +2,7 @@
 
 - name:
 
-  apt:
+  apt :
 
     update_cache: yes
     upgrade     : '{{ patch_upgrade_type }}'

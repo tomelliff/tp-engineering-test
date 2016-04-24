@@ -1,12 +1,12 @@
 ####################
 
-- name    : get
+- name        : get
 
-  command : '{{ uptime_command }}'
+  command     : '{{ uptime_command }}'
 
   changed_when: false
 
-  register: uptime
+  register    : uptime
 
 ####################
 

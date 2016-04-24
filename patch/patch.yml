@@ -1,12 +1,12 @@
 ####################
 
-- name: patch
+- name  : patch
 
   become: true
 
-  hosts: all
+  hosts : all
 
-  roles:
+  roles :
 
     - role: patch
 

@@ -6,11 +6,11 @@
 
 ####################
 
-- name: rules
+- name      : rules
 
   with_items: ufw_default_rules
 
-  ufw :
+  ufw       :
 
     port    : '{{ item.port     }}'
     protocol: '{{ item.protocol }}'
