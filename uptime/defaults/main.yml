@@ -1,5 +1,5 @@
 ####################
 
-uptime_command: uptime
+uptime_command: uptime --pretty
 
 ####################

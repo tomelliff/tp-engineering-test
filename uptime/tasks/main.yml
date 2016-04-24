@@ -12,6 +12,6 @@
 
 - name : display
 
-  debug: var=uptime.stdout
+  debug: msg="{{ inventory_hostname }} has been {{ uptime.stdout }}"
 
 ####################
