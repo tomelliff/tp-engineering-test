@@ -1,0 +1,21 @@
+####################
+
+ufw_ssh_port: 22
+
+####################
+
+ufw_default_rules:
+
+  - port    : '{{ ufw_ssh_port }}'
+    protocol: tcp
+    rule    : allow
+
+####################
+
+ufw_default_policy: reject
+
+####################
+
+ufw_state: enabled
+
+####################

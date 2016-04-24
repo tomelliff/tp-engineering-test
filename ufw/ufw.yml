@@ -1,0 +1,13 @@
+####################
+
+- name: ufw
+
+  become: true
+
+  hosts: all
+
+  roles:
+
+    - role: ufw
+
+####################

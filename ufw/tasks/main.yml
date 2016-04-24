@@ -1,0 +1,31 @@
+####################
+
+- name: install
+
+  apt : name=ufw
+
+####################
+
+- name: rules
+
+  with_items: ufw_default_rules
+
+  ufw :
+
+    port    : '{{ item.port     }}'
+    protocol: '{{ item.protocol }}'
+    rule    : '{{ item.rule     }}'
+
+####################
+
+- name: policy
+
+  ufw : policy='{{ ufw_default_policy }}'
+
+####################
+
+- name: enable
+
+  ufw : state='{{ ufw_state }}'
+
+####################
