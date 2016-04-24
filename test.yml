@@ -1,6 +1,6 @@
 ####################
 
-- name: test | ping
+- name : test | ping
 
   hosts: all
 
@@ -12,13 +12,13 @@
 
 ####################
 
-- name: test
+- name  : test
 
   become: true
 
-  hosts: all
+  hosts : all
 
-  roles:
+  roles :
 
     - role: patch
 
