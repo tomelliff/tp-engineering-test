@@ -1,0 +1,13 @@
+####################
+
+- name: bounce
+
+  become: true
+
+  hosts: all
+
+  roles:
+
+    - role: bounce
+
+####################

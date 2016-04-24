@@ -1,0 +1,19 @@
+####################
+
+- name   : reboot
+
+  command: '{{ bounce_reboot_command }}'
+
+####################
+
+- name    : wait
+
+  local_action:
+
+    module: wait_for
+
+    host : '{{ inventory_hostname }}'
+    port : '{{ bounce_ssh_port    }}'
+    delay: '{{ bounce_delay       }}'
+
+####################

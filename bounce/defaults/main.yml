@@ -1,0 +1,10 @@
+####################
+
+bounce_reboot_command: shutdown -r now
+
+####################
+
+bounce_ssh_port: 22
+bounce_delay   : 10
+
+####################
