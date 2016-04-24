@@ -1,5 +1,9 @@
 ####################
 
+bounce_enabled: false
+
+####################
+
 bounce_reboot_command: shutdown -r now
 
 ####################

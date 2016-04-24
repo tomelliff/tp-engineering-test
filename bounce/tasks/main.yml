@@ -1,12 +1,18 @@
 ####################
 
-- name   : reboot
+- name    : reboot
 
-  command: '{{ bounce_reboot_command }}'
+  when    : bounce_enabled
+
+  command : '{{ bounce_reboot_command }}'
+
+  register: bounce
 
 ####################
 
 - name        : wait
+
+  when        : bounce.changed
 
   local_action:
 
