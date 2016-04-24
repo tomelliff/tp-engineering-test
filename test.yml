@@ -11,3 +11,21 @@
       ping:
 
 ####################
+
+- name: test
+
+  become: true
+
+  hosts: all
+
+  roles:
+
+    - role: patch
+
+    - role: ufw
+
+    - role: bounce
+
+    - role: uptime
+
+####################
