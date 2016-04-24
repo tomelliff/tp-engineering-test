@@ -1,0 +1,13 @@
+####################
+
+- name: test | ping
+
+  hosts: all
+
+  tasks:
+
+    - name: ping
+
+      ping:
+
+####################
